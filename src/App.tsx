@@ -9,7 +9,7 @@ function App(): JSX.Element {
                 UD CISC275 with React Hooks and TypeScript
             </header>
 
-            <header>This is a different header.</header>
+            <h1>This is a different header.</h1>
 
             <ol className="center">
                 <li>Dogs</li>
