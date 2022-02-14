@@ -49,6 +49,9 @@ export function isQuestion(message: string): boolean {
 export function convertYesNo(word: string): boolean | null {
     if (word.toUpperCase() === "YES") {
         return true;
+    } else if (word.toUpperCase() === "NO") {
+        return false;
+    } else {
+        return null;
     }
-    return true;
 }
