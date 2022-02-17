@@ -23,7 +23,10 @@ export function tripleNumbers(numbers: number[]): number[] {
  * the number cannot be parsed as an integer, convert it to 0 instead.
  */
 export function stringsToIntegers(numbers: string[]): number[] {
-    return [];
+    const strings = numbers.map((mystr: string): number =>
+        isNaN(Number(mystr)) ? 0 : parseInt(mystr)
+    );
+    return strings;
 }
 
 /**
@@ -61,7 +64,11 @@ export function countShortWords(words: string[]): number {
  * then return true.
  */
 export function allRGB(colors: string[]): boolean {
-    return false;
+    const test = colors.every(
+        (color: string): boolean =>
+            color === "blue" || color === "red" || color === "green"
+    );
+    return test;
 }
 
 /**
