@@ -5,8 +5,10 @@
  * the number twice.
  */
 export function bookEndList(numbers: number[]): number[] {
-    // const new_numbers = numbers.map((num: number): )
-    return numbers;
+    if (numbers.length === 0) return numbers;
+
+    return [numbers[0], numbers[numbers.length - 1]];
+    //I think there is a better way to do this without using if statement however it is too simple to not use it.
 }
 
 /**
@@ -37,7 +39,13 @@ export function stringsToIntegers(numbers: string[]): number[] {
  */
 // Remember, you can write functions as lambdas too! They work exactly the same.
 export const removeDollars = (amounts: string[]): number[] => {
-    return [];
+    const brokeboy = amounts.map((amount: string): string =>
+        amount.startsWith("$") ? amount.slice(1) : amount
+    );
+    const strings = brokeboy.map((mystr: string): number =>
+        isNaN(Number(mystr)) || mystr === "" ? 0 : parseInt(mystr)
+    );
+    return strings;
 };
 
 /**
@@ -46,7 +54,13 @@ export const removeDollars = (amounts: string[]): number[] => {
  * in question marks ("?").
  */
 export const shoutIfExclaiming = (messages: string[]): string[] => {
-    return [];
+    const huh = messages.filter(
+        (message: string): boolean => message.endsWith("?") === false
+    );
+    const ahh = huh.map((message: string): string =>
+        message.endsWith("!") ? message.toUpperCase() : message
+    );
+    return ahh;
 };
 
 /**
@@ -79,7 +93,12 @@ export function allRGB(colors: string[]): boolean {
  * And the array [] would become "0=0".
  */
 export function makeMath(addends: number[]): string {
-    return "";
+    if (addends.length === 0) return "0=0";
+    const summation = addends.reduce(
+        (currentTotal: number, num: number) => currentTotal + num,
+        0
+    );
+    return summation + "=" + addends.join("+");
 }
 
 /**
@@ -92,5 +111,12 @@ export function makeMath(addends: number[]): string {
  * And the array [1, 9, 7] would become [1, 9, 7, 17]
  */
 export function injectPositive(values: number[]): number[] {
-    return [];
+    //curious about what the new array does for this, I'm probably just dumb
+    const newarr = [...values];
+    const neg = values.findIndex((num: number): boolean => num < 0);
+    const summation = values
+        .slice(0, neg < 0 ? values.length : neg)
+        .reduce((currentTotal: number, num: number) => currentTotal + num, 0);
+    newarr.splice(neg < 0 ? values.length : neg + 1, 0, summation);
+    return newarr;
 }
