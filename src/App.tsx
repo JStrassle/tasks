@@ -24,7 +24,7 @@ function App(): JSX.Element {
             </header>
             <p>
                 Edit <code>src/App.tsx</code> and save. This page will
-                automatically reload (Edited by Vedant Subramanian).
+                automatically reload.
             </p>
             <hr></hr>
             <CheckAnswer expectedAnswer="42"></CheckAnswer>
