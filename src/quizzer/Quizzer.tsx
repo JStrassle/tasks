@@ -23,7 +23,6 @@ function CurrentView({
     mode,
     setMode,
     quizzes,
-    setQuizzes,
     selectedQuiz,
     setSelectedQuiz
 }: {
