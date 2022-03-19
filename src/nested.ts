@@ -124,7 +124,8 @@ export function makeAnswers(questions: Question[]): Answer[] {
             questionId: question.id,
             text: "",
             submitted: false,
-            correct: false
+            correct: false,
+            pointsEarned: 0
         })
     );
 }

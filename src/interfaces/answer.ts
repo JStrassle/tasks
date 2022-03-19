@@ -10,4 +10,6 @@ export interface Answer {
     submitted: boolean;
     /** Whether or not the students' answer matched the expected. */
     correct: boolean;
+
+    pointsEarned: number;
 }
