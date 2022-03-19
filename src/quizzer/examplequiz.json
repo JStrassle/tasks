@@ -1,0 +1,68 @@
+[
+    {
+        "id": 0,
+        "title": "New Girl Trivia",
+        "description": "Some Basic Questions Any New Girl Fan Can Take On",
+        "max_question_id": 1,
+        "questions": [
+            {
+                "id": 0,
+                "name": "Schmidt",
+                "body": "What is Schmidt's first name?",
+                "type": "short_answer_question",
+                "options": [],
+                "expected": "Winston",
+                "points": 5,
+                "published": true
+            },
+            {
+                "id": 1,
+                "name": "Nick Fandom",
+                "body": "What does Nick call his fans?",
+                "type": "multiple_choice_question",
+                "options": ["Salt & Peppas", "Pepper-Heads", "Nicktastics"],
+                "expected": "Pepper-Heads",
+                "points": 5,
+                "published": true
+            },
+            {
+                "id": 2,
+                "name": "Drinking Game",
+                "body": "What is the name of the drinking game?",
+                "type": "short_answer_question",
+                "options": [],
+                "expected": "True American",
+                "points": 5,
+                "published": true
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "title": "Golf Trivia",
+        "description": "If you don't know golf, this is for you.",
+        "max_question_id": 1,
+        "questions": [
+            {
+                "id": 0,
+                "name": "Doing Good",
+                "body": "What is it called when you get the ball in the hole in the average amount of strokes?",
+                "type": "short_answer_question",
+                "options": [],
+                "expected": "par",
+                "points": 5,
+                "published": true
+            },
+            {
+                "id": 1,
+                "name": "Real Golfer",
+                "body": "Who of these people is an actual golfer?",
+                "type": "multiple_choice_question",
+                "options": ["Arnold Palmer", "John Elway", "Sandy Koufax"],
+                "expected": "Arnold Palmer",
+                "points": 5,
+                "published": true
+            }
+        ]
+    }
+]

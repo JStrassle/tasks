@@ -8,7 +8,7 @@ import {
     shoutIfExclaiming,
     stringsToIntegers,
     tripleNumbers
-} from "./arrays";
+} from "../arrays";
 
 describe("Testing the array functions", () => {
     //////////////////////////////////
